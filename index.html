@@ -2,29 +2,65 @@
 <html lang="en">
 	<head>
 		<title>Rishi's Portfolio</title>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:700|Source+Sans+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
-	</head>	
-	<body class="wrapper">
-	
-		<header class="clearfix">
-			<h1>Rishi</h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#portfolio">portfolio</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			</nav>
+	</head>
+	<body>
+		<header id="header">
+			<div class="wrapper clearfix">
+					<h1>Rishi</h1>
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#skills">skills</a></li>
+							<li><a href="#portfolio">portfolio</a></li>
+							<li><a href="#contact">contact</a></li>
+						</ul>
+					</nav>
+			</div>
 		</header>
-		<div class="banner clearfix">
-			<img src="images/responsive-layout-profile.png" alt="profile_pic">
-			<p class="intro">Hi! I'm a front end developer who loves responsive design and css. I recently finished a degree in front end web development at treehouse and am excite to put all my skills to use!</p>
-		</div>
-		<main class="white-bg">
-			<section id="portfolio">
+		<section class="banner grey-bg">
+			<div class="wrapper clearfix">
+				<img src="images/responsive-layout-profile.png" alt="profile_pic">
+				<p class="intro">Hi! I'm a front end developer who loves responsive design and css. I recently finished a degree in front end web development at treehouse and am excite to put all my skills to use!</p>
+			</div>
+		</section>
+		<section id="skills">
+			<h2>skills</h2>
+			<div class="skill-bars">
+				<div class="html-bar">
+					<h3>html</h3>
+					<div class="bar">
+						<div class="eighty"></div>
+					</div>
+				</div>
+				<div class="css-bar">
+					<h3>css</h3>
+					<div class="bar">
+						<div class="ninty"></div>
+					</div>
+				</div>
+				<div class="js-bar">
+					<h3>javascript</h3>
+					<div class="bar">
+						<div class="sixty"></div>
+					</div>
+				</div>
+				<div class="py-bar">
+					<h3>python</h3>
+					<div class="bar">
+						<div class="ten"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<main class="grey-bg">
+			<section id="portfolio" class="wrapper">
 				<h2>portfolio</h2>
 				<div class="projects clearfix">
 					<article class="project">
@@ -72,26 +108,28 @@
 				</div>
 			</section>
 		</main>
-		<section id="contact">
-			<h2>contact</h2>
-			<p>if you're interested in chatting or want more information about what i've been working on, 
-			I'd love to hear from you!</p>
-			<div class="address">
-				<p>Phone: <span> &emsp;+1(111)555-1234</span></p>
-				<p>Email: <span> &emsp;maharshi849@gmail.com</span></p>
-			</div>
+		<section id="contact" class="wrapper">
+				<h2>contact</h2>
+				<p>if you're interested in chatting or want more information about what i've been working on,
+				I'd love to hear from you!</p>
+				<div class="address">
+					<p>Phone: <span> &emsp;+1(111)555-1234</span></p>
+					<p>Email: <span> &emsp;maharshi849@gmail.com</span></p>
+				</div>
 		</section>
-		<footer class="foot-info">
-			<span style="display: block; margin-right: auto;">Rishi</span>
-			<span class="top">back to top</span>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#portfolio">portfolio</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			</nav>
-		</footer>
-
+		<div class="grey-bg">
+			<footer class="foot-info wrapper">
+				<span style="display: block; margin-right: auto;">Rishi</span>
+				<span class="top"><a href="#header">back to top</a></span>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#skills">skills</a></li>
+						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
 	</body>
 </html>
